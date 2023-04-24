@@ -1,0 +1,141 @@
+.proyectos {
+  background-color: var(--fondo-uno);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.containerP {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  width: 35%;
+  height: 400px;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.card h2 {
+  color: #11c88b;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card:hover {
+  border: 2px solid white;
+}
+
+.containerImg {
+  height: 80%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.containerImg img {
+  height: 100%;
+  width: 100%;
+  background-color: var(--fondo-dos);
+  object-fit: contain;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.containerTexts {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  background-color: var(--fondo-dos);
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 8px 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .proyectos {
+    background-color: var(--fondo-uno);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+
+  .containerP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .card {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .card h2 {
+    color: #11c88b;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .card:hover {
+    border: 2px solid white;
+    filter: brightness(0.8);
+  }
+
+  .containerImg {
+    height: 80%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .containerImg img {
+    height: 100%;
+    width: 100%;
+    background-color: var(--fondo-dos);
+    object-fit: contain;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .containerTexts {
+    width: 100%;
+    height: 20%;
+    padding: 15px;
+    background-color: var(--fondo-dos);
+    background-color: white;
+    color: black;
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    display: flex;
+    width: 90%;
+    height: 350px;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .containerTexts {
+    padding: 7px;
+  }
+
+  .containerTexts p {
+    font-size: 14px;
+  }
+}
